@@ -13,7 +13,7 @@ public class SFrame extends JFrame {
 
     private void init() {
         this.setTitle("Sobel");
-        BufferedImage sobel = this.readFile("car.jpg");
+        BufferedImage sobel = this.readFile("eye.jpg");
         SPanel panel = new SPanel(sobel);
         this.add(panel);
         this.setResizable(false);

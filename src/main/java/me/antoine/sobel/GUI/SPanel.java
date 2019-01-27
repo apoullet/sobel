@@ -9,10 +9,10 @@ import java.awt.image.BufferedImage;
 public class SPanel extends JPanel {
     private BufferedImage sobel;
 
-    public SPanel(BufferedImage sobel) {
-        this.setPreferredSize(new Dimension(sobel.getWidth(), sobel.getHeight()));
+    public SPanel(BufferedImage image) {
+        this.setPreferredSize(new Dimension(image.getWidth(), image.getHeight()));
 
-        this.sobel = sobel;
+        this.sobel = image;
 
         SConvolution convolution = new SConvolution();
 
